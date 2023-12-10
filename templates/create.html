@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новый вопрос</title>
+</head>
+<body>
+
+<h2>Новый вопрос</h2>
+
+<form action="/create" method="post">
+
+    <label for="question_text">Текст вопроса:</label><br>
+    <textarea id="question_text" name="question_text" rows="4" cols="50" required></textarea><br><br>
+
+    <label for="option1">Ответ 1:</label>
+    <input type="text" id="option1" name="options[]" required><br>
+
+    <label for="option2">Ответ 2:</label>
+    <input type="text" id="option2" name="options[]" required><br>
+
+    <label for="option3">Ответ 3:</label>
+    <input type="text" id="option3" name="options[]"><br>
+
+    <label for="option4">Ответ 4:</label>
+    <input type="text" id="option4" name="options[]"><br><br>
+
+    <input type="submit" value="Создать">
+</form>
+
+</body>
+</html>
