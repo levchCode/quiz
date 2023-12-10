@@ -16,5 +16,6 @@ jobs:
           key: ${{ secrets.SERVER_KEY }}
           script: | 
             cd quiz/quiz/
+            git pull
             docker compose down
             docker compose up --build -d
