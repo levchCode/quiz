@@ -15,7 +15,6 @@ jobs:
           username: ${{ secrets.SERVER_USERNAME }}
           key: ${{ secrets.SERVER_KEY }}
           script: | 
-            cd quiz
-            ls -lha
-            docker compose stop
+            cd quiz/quiz/
+            docker compose down
             docker compose up --build -d
